@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+
+.show-me {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #08df08;
+  border: 1px solid #08df08;
+  border-radius: 5px;
+  line-height: 3em;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 100%;
+  height: auto;
+  margin: 5px 0px;
+  background-color: white;
+}
+.show-me:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(13, 233, 61, 0.5);
+  background-color: #08df08;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.show-me:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+  -moz-animation: shine 0.5s 0s linear;
+  animation: shine 0.5s 0s linear;
+}
+.show-me:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.show-me:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.show-me-container {
+  text-align: center;
+  position: relative;
+  width: 30vw;
+  right: 1%;
+}
+
+.speech-bubble-container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+}
+
+.speech-bubble {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}

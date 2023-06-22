@@ -1,0 +1,13 @@
+.chart {
+    width: 65vw;
+    height: 70vh;
+    margin-right: 0px;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    text-transform: capitalize;
+  }
+
+.waiting-for-chart {
+  position: relative;
+}

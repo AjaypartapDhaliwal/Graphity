@@ -1,0 +1,66 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .dropdown-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    margin-top: 10px;
+  }
+  
+  .filter-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter-label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .filter-inputs {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .filter-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .filter-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Add additional styles as needed */
+  
